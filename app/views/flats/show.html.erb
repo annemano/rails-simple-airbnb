@@ -1,0 +1,60 @@
+<div class="container d-flex">
+
+  <div class="flat-text">
+
+    <div class="flat-name-address">
+      <h1><%= @flat.name %></h1>
+      <h3><%= @flat.address %></h3>
+    </div>
+
+    <div class="flat-description">
+      <h2>A bit more about this flat...</h2>
+      <p><%= @flat.description %></p>
+    </div>
+
+  </div>
+
+  <div class="flat-book-details">
+
+    <div class="flat-book">
+      <h4>Book this place!</h4>
+      <form>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">From:</span>
+          <input type="date" class="form-control" placeholder="12/10/2021" aria-label="From Date" aria-describedby="basic-addon1">
+          <span class="input-group-text" id="basic-addon2">To:</span>
+          <input type="date" class="form-control" placeholder="14/10/2021" aria-label="To Date" aria-describedby="basic-addon2">
+          <button type="submit" class="btn btn-success">Book</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="flat-details">
+      <h2>Details</h2>
+      <div class="details-items d-flex">
+        <p><i class="fas fa-user-friends"></i> <%= @flat.number_of_guests %></p>
+        <p><i class="fas fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+      </div>
+    </div>
+
+    <div class="flat-share d-flex justify-content-between">
+      <p>Share</p>
+      <div class="links">
+        <ul>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+          <li><i class="fab fa-pinterest-square"></i></li>
+          <li><i class="fas fa-envelope-square"></i></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
